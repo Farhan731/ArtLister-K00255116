@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>ArtLister</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Stylesheet/style.css">
+        <script src="js/script.js"></script>
+    
+        <style>
+
+          
+#text {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  height: 35px;
+  /* background-color: red; */
+}
+
+#text1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  height: 35px;
+}
+
+#file {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  height: 35px;
+}
+
+
+        </style>
+    
+    </head>
+
+<body>
+
+  <header>
+
+    <div class="artlistericon">
+    <a href="index.html" class="logo">
+    <img src="images/Logo.png">
+    </a>
+    </div>
+
+    <div class="header3col">
+      <div class="search-box">
+        <button class="btn-search"><i class="fas fa-search"></i><img src="images/search.png"></button>
+        
+        <input type="text" class="input-search" placeholder="Type to Search...">
+      </div>
+
+      <div class="hItem navbarmenu">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="Artist.html">ARTIST</a></li>
+          <li><a href="NewsPage.html">NEWS</a></li>
+          <li><a href="Recommended.html">RECOMMENDED</a></li>
+        </ul>
+        <!-- <a class="active" href="#home">HOME</a>
+        <a href="#contact">ARTIST</a>
+        <a href="#about">NEWS</a>
+        <a href="#about">RECOMMENDED</a> -->
+
+      </div>
+
+      <div class="hItem login">
+        <div class="loginmn"><a href="login.html"><h3> LOGIN&nbsp   </h3></a></div>
+        <div class="register"><a href="register.html"><h3>  &nbspREGISTER </h3></a></div>
+        
+      </div>
+    
+
+    </div>
+    <hr>
+  </header>
+      <div class="formbody">
+        <style>
+        .formbody { background-color: #162423!important;
+          margin: auto;
+          padding-left: 500px;
+          padding-right: 500px;
+          padding-top: 200px;
+          padding-bottom: 200px;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;}
+          
+          .formAddArticle {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            color: white;
+          }
+
+          .formAddArticle > *
+          {
+            margin: 5px;
+          }
+          
+          #submit {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            align-content: center;
+            padding-right: 40px;
+            padding-left: 40px;
+          }
+
+          
+          </style>
+
+      <form>
+        <div class="formAddArticle">
+          <h1> Update Article</h1>
+
+          <label for="text">Enter Article ID for Update</label> 
+            <input type="text" name="text" id="text">
+          <br>
+          <label for="text">Article Title</label> 
+            <input type="text" name="text" id="text">
+            <br>
+
+            <label for="text1">Article text</label> 
+            <textarea id="text1" name="text1" rows="4" cols="50"></textarea>
+            <br>
+            <label for="file">Upload Images:</label> 
+            <input type="file" name="file" id="file">
+            <br>
+            <!-- <a href="index.html">  -->
+            <!-- <input type="submit" name="submit" id="submit"></a> -->
+            <button type="submit" id="submit"> <a href="index.html">Submit </a><i class="fas fa-angle-right"></i></button>
+
+        </div>
+      </form>
+
+    </div>
+
+      <footer>
+     
+        <div class="fCol fCol1">
+          <h3>ArtLister</h3>
+          <ul>
+            <a href="#"> <li> ArtLister</li> </a>
+            <a href="#"> <li> About Us</li></a>
+            <a href="#"> <li> Accessibility</li></a>
+            <a href="#"> <li> Advertise</li></a>
+            <a href="#"> <li> PMC Fashion & Luxury</li></a>    
+    
+    
+          </ul>
+    
+        </div>
+    
+        <div class="fCol fCol2">
+          <h3>Legal</h3>
+          <ul>
+            <a href="#"> <li> Terms of Use</li> </a>
+            <a href="#"> <li> Privacy Policy</li></a>
+            <a href="#"> <li> AdChoices</li></a>
+            <a href="#"> <li> EU Privacy Preferences</li></a>
+            <a href="#"> <li> GDPR</li></a>    
+    
+    
+          </ul>
+          
+        </div>
+    
+        <div class="fCol fCol3">
+          <h3>Subscriber Support</h3>
+          <ul>
+            <a href="#"> <li> Subscribe to ARTnews </li> </a>
+            <a href="#"> <li> Magazine</li></a>
+            <a href="#"> <li> Subscribe to AiA</li></a>
+            <a href="#"> <li> Magazine</li></a>
+            <a href="#"> <li> Purchase Back Issues</li></a>    
+    
+    
+          </ul>
+          
+        </div>
+    
+      </footer>
+
+
+</body>
+</html>

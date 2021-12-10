@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>ArtLister</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Stylesheet/style.css">
+        <script src="js/script.js"></script>
+
+         <style>
+            
+            .wrapper {
+                width: 50%;
+                max-width: 50%;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                margin: auto;
+                padding-top: 100px;
+                padding-bottom: 150px;
+                /* background-color: red; */
+            }
+
+            #loginLanding {
+                background-image: url(images/login.jpeg);
+                background-repeat: no-repeat, repeat;
+                height: 800px;
+                background-position:top;
+                background-repeat: no-repeat;
+                background-size: cover;
+                /* margin-top: 100px; */
+                /* min-height: 900px; */
+            }
+
+#loginLanding #sign header { /* change header bg color */
+    background-color:black;
+    /* width: 25%; */
+    max-width: 25%;
+    /* margin-bottom: ; */
+}
+
+#loginForm { /* set form bg color to a white with slight transparency*/
+    background-color: rgba(22, 36, 35, .8);
+    /* margin: 50px; */
+    padding: 50px;
+    border-radius: 25px;
+    /* margin-bottom: 250px; */
+}
+
+footer {
+  clear: both;
+  margin: auto;
+}
+
+#sign article#loginForm { /* make labels align left */
+    text-align: left;
+}
+
+#sign article#loginForm div { /* align the button to be center */
+    text-align: center; 
+}
+.lgg {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: large;
+    color: white;
+}
+
+label, input { 
+    display: block;
+}
+
+label { /* syle the labels  */
+    font-size:large;
+    color: white;
+}
+
+input {
+    margin-bottom: 1em;
+    border-radius: 6px;
+    padding: 6px;
+    border: solid 1px #9B9B9B;
+    width: 100%;
+}
+
+#loginBtn {
+    background-color: white;
+    border: solid 2px #121E1D;
+    color: black;
+    font-size: large;
+    margin-bottom: 25px;
+    padding: 12px 50px 12px 50px;
+    margin: 25px;
+    border-radius: 10px;
+}
+
+form .fas { /* color the font awesome icons */
+    color: black;
+}
+
+#sign aside p { /* style the forgot login info */
+    font-size: small;
+    text-align: center;
+    color: lightgray;
+    font-weight:200;
+}
+
+aside a {
+    color: white;
+    font-size: medium;
+}
+
+body {
+  background-color: #121E1D!important;
+}
+
+div#pwdWrap {
+    display: flex; 
+    align-items: center; 
+    border: solid 1px #9b9b9b; 
+    background-color: #fff; 
+    border-radius: 6px;
+}
+
+form .fa-eye {
+    margin: 0 6px; 
+    cursor: pointer;
+    color: black; 
+}
+
+form .fa-eye-slash {
+    margin: 0 6px; 
+    cursor: pointer;
+    color: black; 
+    font-size: .95em; 
+}
+
+input#password {
+    margin-bottom: 0; 
+    border: none; 
+}
+
+
+
+
+        </style>
+
+    
+        
+    
+    </head>
+
+<!-- <body> -->
+
+
+  <body id="loginLanding">
+    <header>
+
+      <div class="artlistericon">
+      <a href="index.html" class="logo">
+      <img src="images/Logo.png">
+      </a>
+      </div>
+  
+      <div class="header3col">
+        <div class="search-box">
+          <button class="btn-search"><i class="fas fa-search"></i><img src="images/search.png"></button>
+          
+          <input type="text" class="input-search" placeholder="Type to Search...">
+        </div>
+  
+        <div class="hItem navbarmenu">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="Artist.html">ARTIST</a></li>
+            <li><a href="NewsPage.html">NEWS</a></li>
+            <li><a href="Recommended.html">RECOMMENDED</a></li>
+          </ul>
+          <!-- <a class="active" href="#home">HOME</a>
+          <a href="#contact">ARTIST</a>
+          <a href="#about">NEWS</a>
+          <a href="#about">RECOMMENDED</a> -->
+  
+        </div>
+  
+        <div class="hItem login">
+          <div class="loginmn"><a href="login.html"><h3> LOGIN&nbsp   </h3></a></div>
+          <div class="register"><a href="register.html"><h3>  &nbspREGISTER </h3></a></div>
+          
+        </div>
+      
+  
+      </div>
+      <hr>
+    </header>
+    <main class="wrapper">
+        
+         
+         <section id="sign">
+            
+             <article id="loginForm">
+                <h1 class="lgg">Register</h1>
+                 <form action="adminpage.html" method="post">
+  
+                    <label for="namereg"><i class="fas fa-envelope"></i> Name </label>
+ 
+                    <input type="namereg" id="namereg" name="namereg" required>
+
+                    <label for="address"><i class="fas fa-envelope"></i> Address </label>
+ 
+                    <input type="address" id="address" name="address" required>
+
+                    <label for="phonenum"><i class="fas fa-envelope"></i> Phone No </label>
+ 
+                    <input type="phonenum" id="phonenum" name="phonenum" required>
+
+                    <label for="email"><i class="fas fa-envelope"></i> Email</label>
+ 
+                     <input type="email" id="email" name="email" required>
+
+                    <label for="password"><i class="fas fa-lock"></i> Password</label>
+                     <div id="pwdWrap">
+                        
+                         <input type="password" id="password" name="password" required>
+                         <!-- <i class="fas fa-eye eyeIcon"></i> -->
+                     </div>
+ 
+                     <div>
+                        <a href="admin.html"><button type="submit" id="loginBtn"> <a href="admin.html">Register </a><i class="fas fa-angle-right"></i></button></a> 
+                     </div>
+ 
+                     <!-- <aside>
+                         <p><a href="#">Forgot your password?</a> <br> Don’t have an Artlister account? <a href="register.html">Join Now</a>.</p>
+                     </aside> -->
+                 </form>
+             </article>
+         </section>
+    </main>
+
+
+   
+
+      <footer>
+     
+        <div class="fCol fCol1">
+          <h3>ArtLister</h3>
+          <ul>
+            <a href="#"> <li> ArtLister</li> </a>
+            <a href="#"> <li> About Us</li></a>
+            <a href="#"> <li> Accessibility</li></a>
+            <a href="#"> <li> Advertise</li></a>
+            <a href="#"> <li> PMC Fashion & Luxury</li></a>    
+    
+    
+          </ul>
+    
+        </div>
+    
+        <div class="fCol fCol2">
+          <h3>Legal</h3>
+          <ul>
+            <a href="#"> <li> Terms of Use</li> </a>
+            <a href="#"> <li> Privacy Policy</li></a>
+            <a href="#"> <li> AdChoices</li></a>
+            <a href="#"> <li> EU Privacy Preferences</li></a>
+            <a href="#"> <li> GDPR</li></a>    
+    
+    
+          </ul>
+          
+        </div>
+    
+        <div class="fCol fCol3">
+          <h3>Subscriber Support</h3>
+          <ul>
+            <a href="#"> <li> Subscribe to ARTnews </li> </a>
+            <a href="#"> <li> Magazine</li></a>
+            <a href="#"> <li> Subscribe to AiA</li></a>
+            <a href="#"> <li> Magazine</li></a>
+            <a href="#"> <li> Purchase Back Issues</li></a>    
+    
+    
+          </ul>
+          
+        </div>
+    
+      </footer>
+
+
+<!-- </body> -->
+</html>

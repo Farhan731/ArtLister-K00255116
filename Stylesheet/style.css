@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.overallcontainerhome {
+  background: #162423;
+  
+}
+
+ .logo {
+   margin-top: 10px;
+  max-width: 100%;
+  align-content: center;
+  justify-content: center;
+  display: grid;
+  /* background-color: red; */
+}
+
+header {
+  width: 100%;
+  background-color: #162423;
+  /* margin: 25px; */
+  padding-top: 20px;
+  
+
+}
+
+
+
+.header3col {
+  display: flex;
+  /* background-color: red; */
+  justify-content:space-around;
+  align-content: center;
+  text-align: center;
+  color: white;
+  /* background-color: yellow; */
+
+}
+
+ 
+ 
+
+/* TODO: Add the focus state */
+/* #searchfield:focus {
+  /* width: 30em; */
+  /* width: 30em;
+  background-color: #fff;
+  border-color: #74abff;
+
+  box-shadow: 0 0 10px rgba(109, 207, 246, .75);
+} */ */
+ 
+.hItem  {
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+.header3col > * {
+  justify-content:stretch;
+  text-decoration: none;
+  /* background-color: red;
+  border: 3px solid palevioletred; */
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+ 
+}
+
+.header3col ul {
+  width: auto;
+  margin-top: 8px;
+}
+
+.header3col li {
+  display: inline-block;
+  padding: 15px 30px;
+}
+
+.header3col a {
+  font-style:  none;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+
+}
+
+.header3col a:hover {
+  font-weight: bold;
+  color: #e79800;
+  /* text-decoration: underline; */
+
+}
+
+.header3col a:active {
+  font-weight: bold;
+  color: #e79800;
+  text-decoration: underline;
+
+}
+
+
+
+
+.header3col ul {
+  display: inline;
+  color: green;
+}
+
+.navbarmenu a {
+  text-decoration: none;
+}
+
+.login {
+  padding-top: 15px;
+  display: flex;
+  font-size: small;
+  clear: both;
+  /* background-color: red; */
+}
+
+
+/* SLIDER */
+
+#slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
+#slider figure img {
+	width: 20%;
+	float: left;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+
+/* Categories */
+.categories {
+  display: flex;
+  max-width: 75%;
+  margin: auto;
+  margin-top: 25px;
+  justify-content: space-around;
+  align-items: stretch;
+  color: white;
+
+}
+
+.cat {
+  height: 400px;
+  width: 300px;
+  margin: 10px;
+
+}
+
+.cat-1 {
+  height: 100px;
+}
+
+.newsletter {
+  color: white;
+  display: grid; margin:auto;
+  align-items: center;
+  margin-top: 220px;
+}
+.newsletter > * {
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  color: white;
+  display: grid;
+  margin: 3px;
+  
+}
+
+.devider {
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size:x-large;
+  margin: 10px;
+  padding-top: 25px;
+  /* background-color: red; */
+  max-width: 70%;
+  align-content: center;
+  margin: auto;
+}
+
+ .newsCard {
+   display: flex;
+   flex: 1 1 100%;
+   flex-wrap: wrap;
+   justify-content:flex-start;
+   align-content: flex-start;
+   max-width: 72%;
+   margin:auto;
+ }
+
+ .newsCard .newsCard {
+  /* flex-basis:100%; */
+}
+  .news-cards .newsCard ,
+
+  .news-cards .newsCard  {
+     flex-basis:50%;
+ }
+
+.newsCard > * {
+  /* border: red;
+  background-color: violet; */
+  color: white;
+  height: 300px;
+  width: 300px;
+  /* margin: 15px; */
+  margin-top: 15px;
+  margin-bottom: 15px;
+  /* background-color: red; */
+  max-width: 70%;
+
+}
+
+.text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.newscard1 .text {
+  width: 100%;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+
+}
+
+.newscard2 .text {
+  width: 100%;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+
+}
+
+.newscard3 .text {
+  width: 100%;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* background-color: red; */
+
+}
+
+.mustread {
+  /* background-color: red; */
+  color:white;
+  display: flex;
+  /* justify-content: space-around; */
+  max-width: 70%;
+  align-content: center;
+  justify-content:space-between;
+  margin: auto;
+}
+
+.mustread > * {
+  justify-content:space-between;
+}
+ 
+footer {
+ background-color: #121e1d;
+ color:white;
+ display: flex;
+ /* justify-content: space-around; */
+ /* max-width: 70%; */
+ align-content: center;
+ padding-top: 35px;
+ padding-bottom: 35px;
+ margin-top: 35px;
+ justify-content:space-between;
+ clear: both;
+ margin: auto;
+}
+
+footer > * {
+  max-width: 100%;
+  padding-top: 5px;
+}
+
+.fCol {
+  max-width: 100%;
+  margin: auto;
+  color: white;
+}
+
+footer h3 {
+  text-align: center;
+}
+
+footer ul {
+  padding:0;
+  list-style:none;
+  line-height:2.5;
+  font-size:14px;
+  margin-bottom:0;
+  align-content: center;
+  text-align: center;
+
+}
+
+footer  ul a {
+  color:inherit;
+  text-decoration:none;
+  /* opacity:0.5; */
+  /* background-color: red; */
+/* color: red; */
+}
+
+footer ul a:hover {
+  opacity: 1;
+  font-weight: bold;
+}
+
+.blank {
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.blankimg {
+  margin-left: 100px;
+  width: 500px;
+  height: auto;
+}
+
+.text22 {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  /* background-color: red; */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.search-box{
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+.input-search{
+  height: 40px;
+  width: 40px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  background-color: lightgray;
+  padding-right: 40px;
+  color:#fff;
+}
+.input-search::placeholder{
+  color:rgba(255,255,255,.5);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.btn-search{
+  width: 40px;
+  height: 40px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color:#ffffff ;
+  /* background-color:transparent; */
+  pointer-events: painted;  
+}
+.btn-search:focus ~ .input-search{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+.input-search:focus{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+
+
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+
+  .flex-grid {
+    display: block;
+  }
+
+}

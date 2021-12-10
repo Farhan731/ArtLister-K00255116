@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ArtLister</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Stylesheet/style.css">
+    <script src="js/script.js"></script>
+
+
+</head>
+
+<style>
+    body { 
+      display: grid;
+      grid-template-areas: 
+        "header header header"
+        "article nav ads"
+        "footer footer footer";
+      grid-template-rows: 80px 1fr 70px;  
+      grid-template-columns: 1fr 0fr .5fr;
+      grid-row-gap: 10px;
+      grid-column-gap: 10px;
+      height: 100vh;
+      margin: 0;
+      background-color: white!important;
+      }  
+    header, footer, article, nav, div {
+      /* padding: 1.2em; */
+      /* background: gold; */
+      /* background-color: #162423!important; */
+      /* margin-bottom: 25px; */
+      }
+      header {
+        background-color: #162423!important;
+        /* margin-bottom: 250px; */
+      }
+    #pageHeader {
+      grid-area: header;
+      /* margin-bottom: -25px; */
+      margin: auto;
+      
+      
+      }
+    #pageFooter {
+      grid-area: footer;
+      margin: auto !important;
+      width: 100%!important;
+      }
+    #mainArticle { 
+      grid-area: article;  
+      margin-left: 50px;
+      clear: both; 
+      /* color: white; */
+      margin-top: 80px;
+      background-color: white!important;
+      line-height: 1.5em;
+
+      }
+    
+    #siteAds { 
+      grid-area: ads; 
+      margin-top: 80px;
+      background-color: white!important;
+      margin-right: 50px;
+      } 
+
+    .carimg {
+          width: 100%;
+          height: auto;
+      }
+
+      .imgdes {
+          color: grey;
+          font-size: xx-small;
+
+      }
+
+      .story1 {
+          margin-top: 20px;
+          width: 100%;
+          margin-bottom: 10px;
+          display: flex;
+          flex-wrap: wrap;
+          /* justify-content: center; */
+          align-items: center;
+          align-content: center;
+
+      }
+
+      .mr {
+          width: 150px;
+          height: auto;
+          margin-right: 10px;
+      }
+
+      .ad {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          width: 80%;
+      }
+
+      .newsletter2 {
+          display: grid;
+          align-content: center;
+          justify-content: center;
+          text-align: center;
+          background-color: #fafafa;
+          padding: 25px;
+          padding-top: -20px;
+      }
+
+
+
+    /* Stack the layout on small devices/viewports. */
+    @media all and (max-width: 575px) {
+      body { 
+        grid-template-areas: 
+          "header"
+          "article"
+          "ads"
+          "nav"
+          "footer";
+        grid-template-rows: 80px 1fr 70px 1fr 70px;  
+        grid-template-columns: 1fr;
+     }
+    }
+    </style>
+
+
+<body>
+  <header id="pageHeader">
+
+    <div class="artlistericon">
+    <a href="index.html" class="logo">
+    <img src="images/Logo.png">
+    </a>
+    </div>
+
+    <div class="header3col">
+      <div class="search-box">
+        <button class="btn-search"><i class="fas fa-search"></i><img src="images/search.png"></button>
+        
+        <input type="text" class="input-search" placeholder="Type to Search...">
+      </div>
+
+      <div class="hItem navbarmenu">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="Artist.html">ARTIST</a></li>
+          <li><a href="NewsPage.html">NEWS</a></li>
+          <li><a href="Recommended.html">RECOMMENDED</a></li>
+        </ul>
+        <!-- <a class="active" href="#home">HOME</a>
+        <a href="#contact">ARTIST</a>
+        <a href="#about">NEWS</a>
+        <a href="#about">RECOMMENDED</a> -->
+
+      </div>
+
+      <div class="hItem login">
+        <div class="loginmn"><a href="login.html"><h3> LOGIN&nbsp   </h3></a></div>
+        <div class="register"><a href="register.html"><h3>  &nbspREGISTER </h3></a></div>
+        
+      </div>
+    
+
+    </div>
+    <hr>
+  </header>
+
+    <article id="mainArticle">
+        <div class="ArticleHead">
+      
+        <h1>
+          Bob Dylan’s ‘Retrospectrum’ Surveys the Musician’s Visual Art in His Most Expansive Museum Show
+
+        </h1>
+        <p> BY THE EDITORS OF ARTNEWS | November 16, 2021 11:46am</p>
+        <br>
+        <img src="images/newsarticle4.jpeg" class="carimg">
+        <p class="imgdes">BY ANDY BATTAGLIA | November 30, 2021 11:00am</p>
+        </div>
+
+        <div class="articleText">
+            
+            <p>
+
+              Focusing on a seldom-seen side of one of the most indelible American artists of any kind, “Bob Dylan: Retrospectrum” will be the biggest and widest-eyed survey of Dylan’s visual artwork ever presented in the U.S. when it opens in Miami this week. After an earlier run two years ago at the Modern Art Museum (MAM) Shanghai, the exhibition at the Frost Art Museum at Florida International University will feature close to 200 paintings, drawings, and iron sculptures by a familiar figure better-known for the way he wields words.
+
+              The show spans some 60 years of Dylan’s career and includes what an exhibition description calls “immersive and interactive displays” that “simultaneously illuminate the context of his artistic evolution, in tandem with Dylan’s musical and literary canon.” It was curated, for its 2019 premiere in China and now in its amended form in Miami, by Shai Baitel, MAM’s artistic director.
+
+              In a press release about the show, the ever-elusive and enigmatic Dylan, who won the Nobel Prize in Literature in 2016, said, “Seeing many of my works years after I completed them is a fascinating experience. I don’t really associate them with any particular time or place or state of mind, but view them as part of a long arc; a continuing of the way we go forth in the world and the way our perceptions are shaped and altered by life. One can be as profoundly influenced by events in Morretes, Brazil, as they can be by the man who sells El País in Madrid.”
+
+In advance of “Retrospectrum,” which runs through April 17, 2022, ARTnews corresponded with Baitel about how he curated the show and what he hopes fans of Dylan’s music might learn about his eye for art.
+              <br>
+              <br>
+              <h3>ARTnews: How did the idea for “Bob Dylan: Retrospectrum” first come about in Shanghai?</h3>
+              <br>
+              Shai Baitel: I have always been fascinated with Dylan’s unique artistic expressions and his different ways of looking at our world. When I first saw his visual artwork, it represented yet another medium by which he manages to convey his observations and successfully tell a story. I love his choice of subject matter, his technique, and myriad skills. His visual art speaks to me in a very powerful, familiar yet enchanting way. I have spent hours viewing his paintings, sailing through my thoughts and emotions to near and far away times and places.
+
+I was aware that even through decades of drawing and painting, there has never been a comprehensive public exhibition of his works. So, when I was appointed to the position of artistic director at MAM Shanghai, I immediately approached Dylan’s management with the idea of a retrospective show of his visual art. Thankfully they agreed.
+
+<br>
+ARTnews: Does what would seem to be a difference in audiences’ familiarity with the depths of Dylan lore make you think differently about ways to present the show in Shanghai versus the U.S.?
+<br>
+Baitel: The great thing about art is that you don’t have to have a degree to “understand it.” Art either speaks to you or it doesn’t. I don’t think you have to know anything about who Bob Dylan is to appreciate his artwork. That said, for those who do, there are many implications in his creations that will resonate.
+<br>
+ARTnews: Are there plans for the exhibition to travel elsewhere?
+<br>
+Baitel: Absolutely—we’ve received many requests from around the world and will be announcing our next locale in the coming months.
+
+
+            </p>
+            
+<div class="newsletter2">
+    <h2>ArtLister Today Newsletter</h2>
+    <p>Up-to-the-minute art news, delivered straight to your inbox.</p>
+    <h3>________________________________ Enter Your Email</h3>
+    <br>
+</div>
+
+        
+        
+        
+            </div>
+
+
+    </article>
+    <!-- <nav id="mainNav">Nav</nav> -->
+    <div id="siteAds">
+        <img src="images/ad.png" class="ad">
+        <div class="mostreadstories">
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            
+            <h2>Must Read</h2>
+            <div class="story1">
+                <img src="images/mr1.png" class="mr">
+                <h5>Maker of Totem Poles Allegedly <br>Faked Native American Heritage</h5>
+
+            </div>
+            <div class="story1">
+                <img src="images/mr2.jpg" class="mr">
+                <h5>
+                    Sound Artists Decline German Art <br> Award:  ‘Pitting Quality Against  ...
+                </h5>
+
+            </div>
+            <div class="story1">
+                <img src="images/mr1.png" class="mr">
+                <h5>Maker of Totem Poles Allegedly <br>Faked Native American Heritage</h5>
+
+            </div>
+            <div class="story1">
+                <img src="images/mr2.jpg" class="mr">
+                <h5>
+                    Sound Artists Decline German Art <br> Award:  ‘Pitting Quality Against  ...
+                </h5>
+
+            </div>
+        </div>
+        <br><br><hr><br><br>
+        <img src="images/ad2.jpg" class="ad">
+
+
+        </div>
+        
+    </div>
+    <footer id="pageFooter">
+        <div class="fCol fCol1">
+            <h3>ArtLister</h3>
+            <ul>
+              <a href="#"> <li> ArtLister</li> </a>
+              <a href="#"> <li> About Us</li></a>
+              <a href="#"> <li> Accessibility</li></a>
+              <a href="#"> <li> Advertise</li></a>
+              <a href="#"> <li> PMC Fashion & Luxury</li></a>    
+      
+      
+            </ul>
+      
+          </div>
+      
+          <div class="fCol fCol2">
+            <h3>Legal</h3>
+            <ul>
+              <a href="#"> <li> Terms of Use</li> </a>
+              <a href="#"> <li> Privacy Policy</li></a>
+              <a href="#"> <li> AdChoices</li></a>
+              <a href="#"> <li> EU Privacy Preferences</li></a>
+              <a href="#"> <li> GDPR</li></a>    
+      
+      
+            </ul>
+            
+          </div>
+      
+          <div class="fCol fCol3">
+            <h3>Subscriber Support</h3>
+            <ul>
+              <a href="#"> <li> Subscribe to ARTnews </li> </a>
+              <a href="#"> <li> Magazine</li></a>
+              <a href="#"> <li> Subscribe to AiA</li></a>
+              <a href="#"> <li> Magazine</li></a>
+              <a href="#"> <li> Purchase Back Issues</li></a>    
+      
+      
+            </ul>
+            
+          </div>
+
+    </footer>
+  </body>
+
+
+
+  </html>

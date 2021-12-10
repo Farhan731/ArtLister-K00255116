@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+
+
+<html>
+    <head>
+        <title>ArtLister</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Stylesheet/style.css">
+        <script src="js/script.js"></script>
+    
+        
+    
+    </head>
+
+<style>
+
+.headnews1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 25px;
+  justify-content: flex-start;
+
+}
+
+.body{
+  background-color: white!important;
+}
+
+.bodycontent {
+  background-color: white;
+}
+
+.news-cards {
+  color: black!important;
+}
+
+.newsletter {
+  color: black!important;
+  background-color:  #fafafa;
+  margin-top: 25px!important;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.newsletter > * {
+  color: black!important;
+}
+
+
+
+.imgdes {
+          color: grey;
+          font-size: xx-small;
+
+      }
+
+.col1news {
+  /* width: 200px; */
+  margin: 10px;
+  /* height: auto; */
+  /* border: 3px solid grey;
+  background-color: hotpink; */
+}
+
+.col1news-1 {
+  width: 900px;
+  min-height: 100px;
+}
+
+.col1news-2 {
+  width: 500px;
+  /* min-height: 100px; */
+  align-content: center;  
+  justify-content:flex-end;
+  margin:auto;
+  align-items: center;
+  flex-direction: column;
+
+  
+
+}
+
+.col1news-2 > * {
+
+  
+  /* margin-top: 50px; */
+  /* color: red; */
+
+}
+
+.imghead {
+  width: 100%;
+  height: auto;
+}
+
+.newscontentpage {
+  display: flex;
+  flex-wrap: wrap; 
+  /* margin: 25px; */
+  padding: 25px;
+  justify-content: center ;
+  background-color: red;
+  background-color: #efefef;
+
+}
+
+.nImg {
+  width: 200px;
+  height: auto;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.ntxt {
+  overflow-wrap: break-word;
+  text-align: center;
+  font-size: small;
+}
+
+.newscnt {
+  width: 250px;
+  height: auto;
+  margin: auto;
+
+}
+
+.news-cards {
+  background-color: white!important;
+ 
+} 
+
+.text {
+  color:  black;
+}
+
+.adinpage { 
+  width: 100%;
+  margin: auto;
+  height: auto; 
+}
+
+.adinpage1 {
+  background-color: white!important;
+  justify-content: center;
+  align-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #f6ead7!important ;
+  flex-direction: column;
+
+}
+
+.ltstnws {
+  background-color: white!important;
+  color: black;
+  /* color: white; */
+  /* font-family: 'Times New Roman', Times, serif; */
+  font-size:x-large;
+  margin: 10px;
+  padding-top: 25px;
+  /* background-color: red; */
+  max-width: 70%;
+  align-content: center;
+  margin: auto;
+}
+
+
+
+</style>
+    
+<body>
+
+
+
+  <header>
+
+    <div class="artlistericon">
+    <a href="index.html" class="logo">
+    <img src="images/Logo.png">
+    </a>
+    </div>
+
+    <div class="header3col">
+      <div class="search-box">
+        <button class="btn-search"><i class="fas fa-search"></i><img src="images/search.png"></button>
+        
+        <input type="text" class="input-search" placeholder="Type to Search...">
+      </div>
+
+      <div class="hItem navbarmenu">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="Artist.html">ARTIST</a></li>
+          <li><a href="NewsPage.html">NEWS</a></li>
+          <li><a href="Recommended.html">RECOMMENDED</a></li>
+        </ul>
+        <!-- <a class="active" href="#home">HOME</a>
+        <a href="#contact">ARTIST</a>
+        <a href="#about">NEWS</a>
+        <a href="#about">RECOMMENDED</a> -->
+
+      </div>
+
+      <div class="hItem login">
+        <div class="loginmn"><a href="login.html"><h3> LOGIN&nbsp   </h3></a></div>
+        <div class="register"><a href="register.html"><h3>  &nbspREGISTER </h3></a></div>
+        
+      </div>
+    
+
+    </div>
+    <hr>
+  </header>
+  
+  <div class="bodycontent">
+    <div class="headnews1">
+      <div class="col1news col1news-1">
+        <a href="News3.html"><img src="images/newsarticle 3.jpg" class="imghead"></a>
+
+      </div>
+      <div class="col1news col1news-2">
+        <a href="BlankPage.html"><h1>Painter Dindga McCannon Takes the Spotlight at Art Basel Miami Beach</h1></a>
+        <p class="imgdes">BY ALEX GREENBERGER<br>
+          December 1, 2021 <br>
+          Posted 36h ago, updated 10h ago</p>
+        
+      </div>
+
+    </div> 
+
+    <div class="newscontentpage">
+
+      <div class="newscnt newscnt-1">
+      <div class="nImg">
+        <img src="images/newscontent1.jpg" class="nImg ">
+      </div>
+      <div class="ntxt">
+        <h3>Japan Brings Fresh Blood to the Art Scene Through TRiCERA ART</h3>
+      </div>
+    </div>
+
+      <div class="newscnt newscnt-2">
+        <div class="nImg">
+          <img src="images/newscontent2.jpg" class="nImg ">
+        </div>
+        <div class="ntxt">
+          <h3>The Best Booths at NADA Miami, from Powerful Portraits to Spirit Carriers</h3>
+        </div>
+    </div>
+
+    <div class="newscnt newscnt-3">
+      <div class="nImg">
+        <img src="images/newscontent3.jpg" class="nImg ">
+      </div>
+      <div class="ntxt">
+        <h3>Painter Dindga McCannon Takes the Spotlight at Art Basel Miami Beach</h3>
+      </div>
+    </div>
+
+    <div class="newscnt newscnt-4">
+      <div class="nImg">
+        <img src="images/newscontent4.jpg" class="nImg ">
+      </div>
+      <div class="ntxt">
+        <h3>5 Great Cameras to Give An Artist for the Holidays (or Get for Yourself)</h3>
+      </div>
+    </div>
+
+    <div class="newscnt newscnt-5">
+      <div class="nImg">
+        <img src="images/newscontent5.jpg" class="nImg ">
+      </div>
+      <div class="ntxt">
+        <h3>Bob Dylan’s ‘Retrospectrum’ Surveys the Musician’s Visual Art</h3>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+    
+
+  </div>
+
+
+
+  <div class="news-cards">
+    <div class="adinpage1">
+    <img src="images/ad1.jpg" class="adinpage">
+  </div>
+    <div class="ltstnws">
+      <h3>Latest News </h3>
+      <hr>
+    </div>
+  
+
+    <div class="newsCard newscard1">
+      <div class="newsimage">
+        <img src="images/news1.jpg">
+
+      </div>
+
+      <div class="text">
+        <h3>The Best Art Books to Buy as Holiday Gifts</h3> 
+        <br>
+        <p>If you purchase an independently reviewed product or service through a link on our website,  we may receive an affiliate commission ‘Tis the season, which means it’s time to start racking…</p>
+        <br>
+        <p>BY THE ARTLISTER RECOMMENDS EDITORS <br> 3 Hours ago</p>
+
+
+      </div>
+    </div>
+
+    <div class="newsCard newscard2">
+      <div class="newsimage">
+        <img src="images/news2.jpg">
+
+      </div>
+
+      <div class="text">
+        <h3>Picasso's Blue Period        </h3> 
+        <br>
+        <p>The Blue Period (Spanish: Período Azul) is a term used to define the works produced by Spanish painter Pablo Picasso between 1901 and 1904 when he painted essentially monochromatic paintings in shades of blue and blue-green</p>
+        <br>
+        <p>BY The Phillips Collection <br> 2 Days ago</p>
+
+
+      </div>
+    </div>
+
+    <div class="newsCard newscard3">
+      <div class="newsimage">
+        <img src="images/news3.jpg">
+
+      </div>
+
+      <div class="text">
+        <h3>Christopher Walken’s character was fake. The Banksy graffiti art he destroyed was very real.</h3> 
+        <br>
+        <p>The thing was: Almost all of it was fake. Frank Sheldon isn’t a real person but a character played by Christopher Walken in the BBC series “The Outlaws,” a show about seven criminals bound by the community service they have to do together.</p>
+        <br>
+        <p>BY Jonathan Edwards <br> 1 Day ago</p>
+
+
+      </div>
+    </div>
+
+   
+    </div>  
+ 
+     <!-- Newletter -->
+ <div class="newsletter">
+  <h2>ArtLister Today Newsletter</h2>
+  <p>Up-to-the-minute art news, delivered straight to your inbox.</p> <br>
+  <h3>________________________________ Enter Your Email</h3>
+ </div>
+   
+
+    <footer>
+     
+        <div class="fCol fCol1">
+          <h3>ArtLister</h3>
+          <ul>
+            <a href="#"> <li> ArtLister</li> </a>
+            <a href="#"> <li> About Us</li></a>
+            <a href="#"> <li> Accessibility</li></a>
+            <a href="#"> <li> Advertise</li></a>
+            <a href="#"> <li> PMC Fashion & Luxury</li></a>    
+    
+    
+          </ul>
+    
+        </div>
+    
+        <div class="fCol fCol2">
+          <h3>Legal</h3>
+          <ul>
+            <a href="#"> <li> Terms of Use</li> </a>
+            <a href="#"> <li> Privacy Policy</li></a>
+            <a href="#"> <li> AdChoices</li></a>
+            <a href="#"> <li> EU Privacy Preferences</li></a>
+            <a href="#"> <li> GDPR</li></a>    
+    
+    
+          </ul>
+          
+        </div>
+    
+        <div class="fCol fCol3">
+          <h3>Subscriber Support</h3>
+          <ul>
+            <a href="#"> <li> Subscribe to ARTnews </li> </a>
+            <a href="#"> <li> Magazine</li></a>
+            <a href="#"> <li> Subscribe to AiA</li></a>
+            <a href="#"> <li> Magazine</li></a>
+            <a href="#"> <li> Purchase Back Issues</li></a>    
+    
+    
+          </ul>
+          
+        </div>
+    
+    </footer>
+
+</body>
+</html>

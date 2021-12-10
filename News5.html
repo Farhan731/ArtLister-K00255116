@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ArtLister</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Stylesheet/style.css">
+    <script src="js/script.js"></script>
+
+
+</head>
+
+<style>
+    body { 
+      display: grid;
+      grid-template-areas: 
+        "header header header"
+        "article nav ads"
+        "footer footer footer";
+      grid-template-rows: 80px 1fr 70px;  
+      grid-template-columns: 1fr 0fr .5fr;
+      grid-row-gap: 10px;
+      grid-column-gap: 10px;
+      height: 100vh;
+      margin: 0;
+      background-color: white!important;
+      }  
+    header, footer, article, nav, div {
+      /* padding: 1.2em; */
+      /* background: gold; */
+      /* background-color: #162423!important; */
+      /* margin-bottom: 25px; */
+      }
+      header {
+        background-color: #162423!important;
+        /* margin-bottom: 250px; */
+      }
+    #pageHeader {
+      grid-area: header;
+      /* margin-bottom: -25px; */
+      margin: auto;
+      
+      
+      }
+    #pageFooter {
+      grid-area: footer;
+      margin: auto !important;
+      width: 100%!important;
+      }
+    #mainArticle { 
+      grid-area: article;  
+      margin-left: 50px;
+      clear: both; 
+      /* color: white; */
+      margin-top: 80px;
+      background-color: white!important;
+      line-height: 1.5em;
+
+      }
+    
+    #siteAds { 
+      grid-area: ads; 
+      margin-top: 80px;
+      background-color: white!important;
+      margin-right: 50px;
+      } 
+
+    .carimg {
+          width: 100%;
+          height: auto;
+      }
+
+      .imgdes {
+          color: grey;
+          font-size: xx-small;
+
+      }
+
+      .story1 {
+          margin-top: 20px;
+          width: 100%;
+          margin-bottom: 10px;
+          display: flex;
+          flex-wrap: wrap;
+          /* justify-content: center; */
+          align-items: center;
+          align-content: center;
+
+      }
+
+      .mr {
+          width: 150px;
+          height: auto;
+          margin-right: 10px;
+      }
+
+      .ad {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          width: 80%;
+      }
+
+      .newsletter2 {
+          display: grid;
+          align-content: center;
+          justify-content: center;
+          text-align: center;
+          background-color: #fafafa;
+          padding: 25px;
+          padding-top: -20px;
+      }
+
+
+
+    /* Stack the layout on small devices/viewports. */
+    @media all and (max-width: 575px) {
+      body { 
+        grid-template-areas: 
+          "header"
+          "article"
+          "ads"
+          "nav"
+          "footer";
+        grid-template-rows: 80px 1fr 70px 1fr 70px;  
+        grid-template-columns: 1fr;
+     }
+    }
+    </style>
+
+
+<body>
+  <header id="pageHeader">
+
+    <div class="artlistericon">
+    <a href="index.html" class="logo">
+    <img src="images/Logo.png">
+    </a>
+    </div>
+
+    <div class="header3col">
+      <div class="search-box">
+        <button class="btn-search"><i class="fas fa-search"></i><img src="images/search.png"></button>
+        
+        <input type="text" class="input-search" placeholder="Type to Search...">
+      </div>
+
+      <div class="hItem navbarmenu">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="Artist.html">ARTIST</a></li>
+          <li><a href="NewsPage.html">NEWS</a></li>
+          <li><a href="Recommended.html">RECOMMENDED</a></li>
+        </ul>
+        <!-- <a class="active" href="#home">HOME</a>
+        <a href="#contact">ARTIST</a>
+        <a href="#about">NEWS</a>
+        <a href="#about">RECOMMENDED</a> -->
+
+      </div>
+
+      <div class="hItem login">
+        <div class="loginmn"><a href="login.html"><h3> LOGIN&nbsp   </h3></a></div>
+        <div class="register"><a href="register.html"><h3>  &nbspREGISTER </h3></a></div>
+        
+      </div>
+    
+
+    </div>
+    <hr>
+  </header>
+
+    <article id="mainArticle">
+        <div class="ArticleHead">
+      
+        <h1>
+            PaykanArtCar: A Driving Force Against Human Rights Abuses Tours Canada
+
+        </h1>
+        <p> BY THE EDITORS OF ARTNEWS | November 16, 2021 11:46am</p>
+        <br>
+        <img src="images/Car.jpg" class="carimg">
+        <p class="imgdes">The PaykanArtCar at Place Vendôme in Paris.
+            IMAGE COURTESY OF PAYKANARTCAR</p>
+        </div>
+
+        <div class="articleText">
+            <br>
+            <h4>How one Iranian artist used the iconic Paykan as a canvas for combatting persecution.</h4>
+            <br>
+            <p>
+
+                Since the late 1960s, the Paykan—the first automobile produced in Iran—has been a beloved national symbol. And though the car went out of production years ago, you can still see Paykans being driven on the streets of Tehran. It’s precisely because the car is such an iconic symbol that Iranian-born artist Alireza Shojaian chose the Paykan as his canvas for a work meant to protest human rights abuses in his home country. In fact, the Paykan limousine he painted is the very one that was gifted to dictator Nicolae Ceausescu by the Shah of Iran when Ceausescu took the title of president of Romania in 1974.
+            </p>
+            <br>
+            <img src="images/car 2.jpg" class="carimg">
+            <p class="imgdes">IMAGE COURTESY OF PAYKANARTCAR</p>
+            <br>
+            <p>On the car’s metal panels, Shojaian painted the story of Ali Fazeli Monfared, who was just 20 years old when he was beheaded by his family in an alleged “honor killing” for being gay. As a homosexual man himself, Shojaian was forced to leave his home country years ago; and there are many more like him. As he stated in a press release, “Living in a society that restricts its citizens from presenting their true, authentic selves, and even outright denies their existence, has caused many in our queer community in the Middle East to live in exile.”
+                <br>
+                Indeed, Iran has a dismal track record when it comes to the rights of members of the LGBT community. Engaging in same-sex intercourse or relationships can be punishable by fines, jail time, flogging, and even execution. Yet, within Iran, there is significant resistance to the government’s imposition of these restrictions on its LGBT community.
+            </p>
+            <br>
+            <img src="images/car 3.jpg" class="carimg"><br>
+            <p class="imgdes">IMAGE COURTESY OF PAYKANARTCAR</p>
+            <br>
+            <p>It is this culture of repression that Shojaian himself had to escape, and which he’s now addressing through his art. In painting the Paykan, Shojaian has reclaimed a national symbol, turning it into a billboard displaying its own powerful message: that Iran, like any other country, has deep-seated human rights issues that it must face. “With the PaykanArtCar, I hope to make visible the beauty and emotion of queer culture that has long been hidden in the region,” said Shojaian, “and, in doing so, pave the way for a world that is more open to acceptance [and] tolerance.” The next stop on its journey is touring across Canada. It begins in Toronto starting November 24 through December 15, then travels to Montreal, Edmonton, and Vancouver (dates to be announced).
+                <br>
+                Shojaian’s work is the first in a series commissioned by PaykanArtCar LLC, a nonprofit that asks Iranian artists like Shojaian to use this legendary vehicle as their canvas to create projects that address human rights issues. Former ambassador to the United Nations Mark D. Wallace, the chief executive officer of PaykanArtCar, is confident that combining the symbol of the Paykan with the radical themes that can be communicated through art will send a powerful message. “Across cultures, art has long been an effective way for people to unify [against] and confront oppression, whether living under tyrannical rule or [operating] from afar,” said Wallace in a press release. “The PaykanArtCar [is] a vehicle that Iranian artists will use to [literally] drive messages of protest and hope internationally, inspiring people while raising awareness of the ways in which Iranians are silenced and persecuted.”
+            </p>
+            <br>
+            <img src="images/car 4.jpg" class="carimg">
+            <br>
+            <p class="imgdes">IMAGE COURTESY OF PAYKANARTCAR</p>
+            <br>
+            <p>The painted Paykan was unveiled at the Human Rights Foundation’s Oslo Freedom Forum in Miami in early October. It was meant to be exhibited at the Asia Now contemporary art fair in Paris later that month, but the organizers revoked their invitation. The fair this year is focusing on Iranian artists, and after Tehran-based galleries refused to exhibit next to this pro-LGBT work, the organizers caved to their demands to disinvite Shojaian.
+                <br>
+                “I’m shocked that the Iranian regime has now found another way to silence him and his pro-LGBTQ art in France, supposedly a bastion of free speech and liberalism,” said executive director and cofounder of PaykanArtCar, Dr. Hiva Feizi, in a press release. The exhibition won’t be silenced for long. It will be hosted by 3.19.27(2), a Toronto-based arts organization that specializes in exhibiting “at risk” artists. Executive director of 3.19.23(2), Kyle Beattie said, “This installation is without doubt the most important we will exhibit to date.”
+                <br>
+                PaykanArtCar will be on view November 24 through December 15 at 3.19.27(2). Touring dates for Montreal, Edmonton, and Vancouver to be announced.</p>
+                <br>
+
+<hr>
+<br>
+<div class="newsletter2">
+    <h2>ArtLister Today Newsletter</h2>
+    <p>Up-to-the-minute art news, delivered straight to your inbox.</p>
+    <h3>________________________________ Enter Your Email</h3>
+    <br>
+</div>
+
+        
+        
+        
+            </div>
+
+
+    </article>
+    <!-- <nav id="mainNav">Nav</nav> -->
+    <div id="siteAds">
+        <img src="images/ad.png" class="ad">
+        <div class="mostreadstories">
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            
+            <h2>Must Read</h2>
+            <div class="story1">
+                <img src="images/mr1.png" class="mr">
+                <h5>Maker of Totem Poles Allegedly <br>Faked Native American Heritage</h5>
+
+            </div>
+            <div class="story1">
+                <img src="images/mr2.jpg" class="mr">
+                <h5>
+                    Sound Artists Decline German Art <br> Award:  ‘Pitting Quality Against  ...
+                </h5>
+
+            </div>
+            <div class="story1">
+                <img src="images/mr1.png" class="mr">
+                <h5>Maker of Totem Poles Allegedly <br>Faked Native American Heritage</h5>
+
+            </div>
+            <div class="story1">
+                <img src="images/mr2.jpg" class="mr">
+                <h5>
+                    Sound Artists Decline German Art <br> Award:  ‘Pitting Quality Against  ...
+                </h5>
+
+            </div>
+        </div>
+        <br><br><hr><br><br>
+        <img src="images/ad2.jpg" class="ad">
+
+
+        </div>
+        
+    </div>
+    <footer id="pageFooter">
+        <div class="fCol fCol1">
+            <h3>ArtLister</h3>
+            <ul>
+              <a href="#"> <li> ArtLister</li> </a>
+              <a href="#"> <li> About Us</li></a>
+              <a href="#"> <li> Accessibility</li></a>
+              <a href="#"> <li> Advertise</li></a>
+              <a href="#"> <li> PMC Fashion & Luxury</li></a>    
+      
+      
+            </ul>
+      
+          </div>
+      
+          <div class="fCol fCol2">
+            <h3>Legal</h3>
+            <ul>
+              <a href="#"> <li> Terms of Use</li> </a>
+              <a href="#"> <li> Privacy Policy</li></a>
+              <a href="#"> <li> AdChoices</li></a>
+              <a href="#"> <li> EU Privacy Preferences</li></a>
+              <a href="#"> <li> GDPR</li></a>    
+      
+      
+            </ul>
+            
+          </div>
+      
+          <div class="fCol fCol3">
+            <h3>Subscriber Support</h3>
+            <ul>
+              <a href="#"> <li> Subscribe to ARTnews </li> </a>
+              <a href="#"> <li> Magazine</li></a>
+              <a href="#"> <li> Subscribe to AiA</li></a>
+              <a href="#"> <li> Magazine</li></a>
+              <a href="#"> <li> Purchase Back Issues</li></a>    
+      
+      
+            </ul>
+            
+          </div>
+
+    </footer>
+  </body>
+
+
+
+  </html>

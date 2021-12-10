@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ArtLister</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Stylesheet/style.css">
+    <script src="js/script.js"></script>
+
+
+</head>
+
+<style>
+    body { 
+      display: grid;
+      grid-template-areas: 
+        "header header header"
+        "article nav ads"
+        "footer footer footer";
+      grid-template-rows: 80px 1fr 70px;  
+      grid-template-columns: 1fr 0fr .5fr;
+      grid-row-gap: 10px;
+      grid-column-gap: 10px;
+      height: 100vh;
+      margin: 0;
+      background-color: white!important;
+      }  
+    header, footer, article, nav, div {
+      /* padding: 1.2em; */
+      /* background: gold; */
+      /* background-color: #162423!important; */
+      /* margin-bottom: 25px; */
+      }
+      header {
+        background-color: #162423!important;
+        /* margin-bottom: 250px; */
+      }
+    #pageHeader {
+      grid-area: header;
+      /* margin-bottom: -25px; */
+      margin: auto;
+      
+      
+      }
+    #pageFooter {
+      grid-area: footer;
+      margin: auto !important;
+      width: 100%!important;
+      }
+    #mainArticle { 
+      grid-area: article;  
+      margin-left: 50px;
+      clear: both; 
+      /* color: white; */
+      margin-top: 80px;
+      background-color: white!important;
+      line-height: 1.5em;
+
+      }
+    
+    #siteAds { 
+      grid-area: ads; 
+      margin-top: 80px;
+      background-color: white!important;
+      margin-right: 50px;
+      } 
+
+    .carimg {
+          width: 100%;
+          height: auto;
+      }
+
+      .imgdes {
+          color: grey;
+          font-size: xx-small;
+
+      }
+
+      .story1 {
+          margin-top: 20px;
+          width: 100%;
+          margin-bottom: 10px;
+          display: flex;
+          flex-wrap: wrap;
+          /* justify-content: center; */
+          align-items: center;
+          align-content: center;
+
+      }
+
+      .mr {
+          width: 150px;
+          height: auto;
+          margin-right: 10px;
+      }
+
+      .ad {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          width: 80%;
+      }
+
+      .newsletter2 {
+          display: grid;
+          align-content: center;
+          justify-content: center;
+          text-align: center;
+          background-color: #fafafa;
+          padding: 25px;
+          padding-top: -20px;
+      }
+
+
+
+    /* Stack the layout on small devices/viewports. */
+    @media all and (max-width: 575px) {
+      body { 
+        grid-template-areas: 
+          "header"
+          "article"
+          "ads"
+          "nav"
+          "footer";
+        grid-template-rows: 80px 1fr 70px 1fr 70px;  
+        grid-template-columns: 1fr;
+     }
+    }
+    </style>
+
+
+<body>
+  <header id="pageHeader">
+
+    <div class="artlistericon">
+    <a href="index.html" class="logo">
+    <img src="images/Logo.png">
+    </a>
+    </div>
+
+    <div class="header3col">
+      <div class="search-box">
+        <button class="btn-search"><i class="fas fa-search"></i><img src="images/search.png"></button>
+        
+        <input type="text" class="input-search" placeholder="Type to Search...">
+      </div>
+
+      <div class="hItem navbarmenu">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="Artist.html">ARTIST</a></li>
+          <li><a href="NewsPage.html">NEWS</a></li>
+          <li><a href="Recommended.html">RECOMMENDED</a></li>
+        </ul>
+        <!-- <a class="active" href="#home">HOME</a>
+        <a href="#contact">ARTIST</a>
+        <a href="#about">NEWS</a>
+        <a href="#about">RECOMMENDED</a> -->
+
+      </div>
+
+      <div class="hItem login">
+        <div class="loginmn"><a href="login.html"><h3> LOGIN&nbsp   </h3></a></div>
+        <div class="register"><a href="register.html"><h3>  &nbspREGISTER </h3></a></div>
+        
+      </div>
+    
+
+    </div>
+    <hr>
+  </header>
+
+    <article id="mainArticle">
+        <div class="ArticleHead">
+      
+        <h1>
+          Stephen Page’s last dance: Bangarra’s ‘fearless’ artistic director bows out after 30 years
+
+        </h1>
+        <p> by Steve Dow | Wed 1 Dec 2021 20.31 GMT</p>
+        <br>
+        <img src="images/newsarticle2.jpg" class="carimg">
+        <p class="imgdes">Stephen Page announces departure from Bangarra Dance Theatre/p>
+        </div>
+
+        <div class="articleText">
+            <br>
+            <h4>The head of the Indigenous dance company is passing on the baton and signing off with his most personal work yet</h4>
+            <br>
+            <p>
+
+              As Stephen Page prepares to make 2022 his final year as artistic director of Bangarra Dance Theatre after 30 years as its leader, the spirits of treasured kindred and kind are coming to the fore in the 56-year-old’s epic final production.
+
+              In a lunch break during rehearsals in Sydney, Page says his late older brother, the long-time Bangarra composer David Page, who died suddenly in 2016, would have loved being part of his concluding work for the company.
+              
+              “David would be really mad at me,” Page jokes, “because he’d be ‘Woah’, you know, ‘About fucking time, we’re doing our story … we’re having [our] language, it’s all connecting us closer to Dad’s country.’”
+            </p>
+            <br>
+            <img src="images/newsarticle2 2.jpg" class="carimg">
+            <p class="imgdes">Rings joined Bangarra as a performer in 1993. Photograph: Bangarra Dance Theatre</p>
+            <br>
+            <p>“We all come from this college, we all connect, Fran and I are like brother and sister,” Page said in a previous interview with Guardian Australia, when the pair were co-choreographing SandSong. “Fran is way more disciplined in structure than I am.”
+
+          
+              Rings laughs with recognition now at Page’s comparison of their styles. “Over the years we’ve come to … reconcile and celebrate each other’s differences. He was my first mentor, and really supported my journey as a creative and a choreographer, even before I saw it in myself.”
+              
+             
+              
+              Page says Rings became part of his family: “We’ve been there for each other, to cry with and cry on and to be with and share.” He lost his younger brother, the charismatic Bangarra dancer Russell Page, to suicide in 2002, aged 34, then five years ago suffered the death of David, his extroverted musician brother and a comic performer, the family declining to name the cause.
+              
+              “After David died, God, I was not the same for, like, three years … The only thing that kept me going was the fact that I had a resource like [this job], that allowed me to stumble and fall and grieve,” Page says.
+              
+              “Fran was there for that. She had to watch from a distance, and that really upset her, to watch me fall and stand up and be in denial.”
+            </p>
+            <img src="images/newssss.png" class="carimg">
+<hr>
+<br>
+<div class="newsletter2">
+    <h2>ArtLister Today Newsletter</h2>
+    <p>Up-to-the-minute art news, delivered straight to your inbox.</p>
+    <h3>________________________________ Enter Your Email</h3>
+    <br>
+</div>
+
+        
+        
+        
+            </div>
+
+
+    </article>
+    <!-- <nav id="mainNav">Nav</nav> -->
+    <div id="siteAds">
+        <img src="images/ad.png" class="ad">
+        <div class="mostreadstories">
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            
+            <h2>Must Read</h2>
+            <div class="story1">
+                <img src="images/mr1.png" class="mr">
+                <h5>Maker of Totem Poles Allegedly <br>Faked Native American Heritage</h5>
+
+            </div>
+            <div class="story1">
+                <img src="images/mr2.jpg" class="mr">
+                <h5>
+                    Sound Artists Decline German Art <br> Award:  ‘Pitting Quality Against  ...
+                </h5>
+
+            </div>
+            <div class="story1">
+                <img src="images/mr1.png" class="mr">
+                <h5>Maker of Totem Poles Allegedly <br>Faked Native American Heritage</h5>
+
+            </div>
+            <div class="story1">
+                <img src="images/mr2.jpg" class="mr">
+                <h5>
+                    Sound Artists Decline German Art <br> Award:  ‘Pitting Quality Against  ...
+                </h5>
+
+            </div>
+        </div>
+        <br><br><hr><br><br>
+        <img src="images/ad2.jpg" class="ad">
+
+
+        </div>
+        
+    </div>
+    <footer id="pageFooter">
+        <div class="fCol fCol1">
+            <h3>ArtLister</h3>
+            <ul>
+              <a href="#"> <li> ArtLister</li> </a>
+              <a href="#"> <li> About Us</li></a>
+              <a href="#"> <li> Accessibility</li></a>
+              <a href="#"> <li> Advertise</li></a>
+              <a href="#"> <li> PMC Fashion & Luxury</li></a>    
+      
+      
+            </ul>
+      
+          </div>
+      
+          <div class="fCol fCol2">
+            <h3>Legal</h3>
+            <ul>
+              <a href="#"> <li> Terms of Use</li> </a>
+              <a href="#"> <li> Privacy Policy</li></a>
+              <a href="#"> <li> AdChoices</li></a>
+              <a href="#"> <li> EU Privacy Preferences</li></a>
+              <a href="#"> <li> GDPR</li></a>    
+      
+      
+            </ul>
+            
+          </div>
+      
+          <div class="fCol fCol3">
+            <h3>Subscriber Support</h3>
+            <ul>
+              <a href="#"> <li> Subscribe to ARTnews </li> </a>
+              <a href="#"> <li> Magazine</li></a>
+              <a href="#"> <li> Subscribe to AiA</li></a>
+              <a href="#"> <li> Magazine</li></a>
+              <a href="#"> <li> Purchase Back Issues</li></a>    
+      
+      
+            </ul>
+            
+          </div>
+
+    </footer>
+  </body>
+
+
+
+  </html>
